@@ -35,6 +35,9 @@ ADD index.html /var/www/site
 # Update the default apache site with the config we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 
+# Resolving host
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 # Activate mod_rewrites
 RUN a2enmod rewrite
 
