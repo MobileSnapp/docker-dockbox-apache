@@ -12,7 +12,6 @@ RUN apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
       apache2 \
-      apache2-mpm-worker \
       curl && \
     apt-get clean \
     && rm -r /var/lib/apt/lists/*
