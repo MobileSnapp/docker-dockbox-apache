@@ -13,7 +13,6 @@ RUN apt-get update && \
     apt-get install -y \
       apache2 \
       apache2-mpm-worker \
-      libapache2-mod-fastcgi \
       curl && \
     apt-get clean \
     && rm -r /var/lib/apt/lists/*
