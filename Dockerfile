@@ -32,7 +32,7 @@ WORKDIR /var/www/site/
 EXPOSE 80
 EXPOSE 443
 
-# Copy this repo into place.
+# Copy test template.
 ADD index.html /var/www/site
 
 # Update the default apache site with the config we created.
