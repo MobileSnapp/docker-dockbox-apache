@@ -12,7 +12,8 @@ RUN apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y \
       apache2 \
-      curl \
+      curl && \
+    apt-get clean \
     && rm -r /var/lib/apt/lists/*
 
 # Manually set up the apache environment variables
